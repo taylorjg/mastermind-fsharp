@@ -4,9 +4,9 @@ type Peg = R | G | B | Y | BL | WH
 type Code = { p0: Peg; p1: Peg; p2: Peg; p3: Peg }
 type Score = { blacks: int; whites: int }
 
-let allPegs = [R; G; B; Y; BL; WH]
+let private allPegs = [R; G; B; Y; BL; WH]
 
-let pegs code = [code.p0; code.p1; code.p2; code.p3]
+let private pegs code = [code.p0; code.p1; code.p2; code.p3]
 
 let evaluateGuess secret guess =
     let spegs = pegs secret
