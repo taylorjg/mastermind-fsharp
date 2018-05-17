@@ -1,4 +1,4 @@
-module Tests
+module EvaluateGuessTests
 
 open Expecto
 open Mastermind
