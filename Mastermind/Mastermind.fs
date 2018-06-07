@@ -47,7 +47,7 @@ let private generateNewGuess set =
             max currentMax y
         let x = List.fold op2 0 allScores        
         if x < fst currentBest then (x, unusedCode) else currentBest
-    let best = List.fold op1 (System.Int32.MaxValue, initialGuess) set
+    let best = List.fold op1 (System.Int32.MaxValue, initialGuess) allCodes
     snd best
 
 let rec private autosolve' attempt set acc =
